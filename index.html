@@ -13,9 +13,9 @@
             font-family: Arial, sans-serif;
         }
         .container {
-            padding: 5px;
+            padding: 20px;
             background: rgba(0, 0, 0, 0.7);
-            border-radius: 5px;
+            border-radius: 10px;
             display: inline-block;
         }
         .profile-pic {
@@ -50,52 +50,51 @@
     <div class="container">
         <img src="https://i.postimg.cc/6QkMBX3F/file-Vkw-XMJ9-CERUSi3yqx9-TG6k.webp" alt="Profile Picture" class="profile-pic">
         <h1>WELCOME TO ROMANTIC TECH LIBRARY</h1>
-        <h2>Explore Into The Tech World With Us</h2>
-        
-        <div class="category">
-            <h3>Graphic Design Books</h3>
-            <button class="btn">Access</button>
-        </div>
-        
-        <div class="category">
-            <h3>Hacking Books</h3>
-            <button class="btn" onclick="enterPassword()">Access (Requires Password)</button>
-            <button class="btn" onclick="redirectToDM()">Get Password</button>
-        </div>
-        
-        <div class="category">
-            <h3>Marketing Books</h3>
-            <button class="btn">Access</button>
-        </div>
-        
-        <div class="category">
-            <h3>WATOOLS Books</h3>
-            <button class="btn">Access</button>
-        </div>
-        
-        <div>
-            <button class="btn" onclick="joinChannel()">Join Our Channel</button>
-        </div>
+        <h2>Explore Into The Tech World With Us</h2><div class="category">
+        <h3>Graphic Design Books</h3>
+        <button class="btn" onclick="location.href='https://drive.google.com/drive/folders/1jSfSmn6a0w6HwCPwwtQWPyex8ditCQO6'">Access</button>
     </div>
+    
+    <div class="category">
+        <h3>Hacking Books</h3>
+        <button class="btn" onclick="enterPassword()">Access (Requires Password)</button>
+        <button class="btn" onclick="redirectToDM()">Get Password</button>
+    </div>
+    
+    <div class="category">
+        <h3>Marketing Books</h3>
+        <button class="btn" onclick="location.href='https://drive.google.com/drive/folders/1tIkKx7SaxXJE8Sp9oKf7Cgpjdyr4LpG6'">Access</button>
+    </div>
+    
+    <div class="category">
+        <h3>WATOOLS Books</h3>
+        <button class="btn" onclick="location.href='https://drive.google.com/drive/folders/1JNpoJzIStNyvp_2RNv-STU1aHDnr5H2X'">Access</button>
+    </div>
+    
+    <div>
+        <button class="btn" onclick="joinChannel()">Join Our Channel</button>
+    </div>
+</div>
 
-    <script>
-        function enterPassword() {
-            let password = prompt("Enter the password:");
-            if (password === "codehacker") {
-                alert("Access Granted!");
-                // Redirect to hacking books page or display books
-            } else {
-                alert("Wrong Password!");
-            }
+<script>
+    function enterPassword() {
+        let password = prompt("Enter the password:");
+        if (password === "codehacker") {
+            alert("Access Granted!");
+            window.location.href = "https://drive.google.com/drive/folders/1QEe4KgnRaXBMvgV18bCGDizrAYiLJIhV";
+        } else {
+            alert("Wrong Password!");
         }
+    }
 
-        function redirectToDM() {
-            window.location.href = "https://wa.link/7ylv65"; // Your DM link
-        }
-        
-        function joinChannel() {
-            window.location.href = "https://whatsapp.com/channel/0029VaYvyvZ11ulN0pNKHX1u"; // Your channel link
-        }
-    </script>
+    function redirectToDM() {
+        window.location.href = "https://wa.link/7ylv65";
+    }
+    
+    function joinChannel() {
+        window.location.href = "https://whatsapp.com/channel/0029VaYvyvZ11ulN0pNKHX1u";
+    }
+</script>
+
 </body>
 </html>
