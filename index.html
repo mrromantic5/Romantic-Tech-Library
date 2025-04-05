@@ -76,6 +76,28 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+        /* Inline button styling */
+.flex-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Align toggle + next page */
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Prevent scroll on first page */
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
     </style>
 </head>
 <body>
@@ -89,7 +111,10 @@
     
     <div class="category">
         <h3>Hacking Books</h3>
-        <button class="btn" onclick="enterPassword()">Access (Requires Password)</button><button class="btn" onclick="redirectToDM()">Get Password</button>
+        <div class="flex-buttons">
+    <button class="btn" onclick="enterPassword()">Access (Requires Password)</button>
+    <button class="btn" onclick="redirectToDM()">Get Password</button>
+        </div>
     </div>
     
     <div class="category">
@@ -106,10 +131,10 @@
         <button class="btn" onclick="joinChannel()">Join Our Channel</button>
     </div>
 </div>
-<div style="margin-top: 30px;">
+<div class="bottom-buttons">
     <button class="btn" onclick="location.href='Library page2.html'">Next Page</button>
-</div>
     <button class="btn" onclick="toggleMode()">Toggle Theme</button>
+</div>
 <script>
     function enterPassword() {
         let password = prompt("Enter the password:");
