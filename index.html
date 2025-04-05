@@ -5,7 +5,7 @@
     <title>Romantic Tech Library</title>
     <style>
         body {
-            background-image: url('https://i.postimg.cc/PrX2XKXf/file-GHQzd-LDkzt-Sthmax-KEo-J3-K.webp');
+            background-image: url('https://i.postimg.cc/PrX2XKXf/file-GHQzd-LDkzt-Sthmax-KEo-J3-K.webp')
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -47,6 +47,35 @@
         .btn:hover {
             box-shadow: 0 0 20px rgba(0, 162, 255, 1);
         }
+        
+        @media (min-width: 768px) {
+    .container {
+        width: 60%;
+    }
+}
+.light-mode {
+    background-image: none;
+    background-color: #f0f0f0;
+    color: black;
+}
+.light-mode .container {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.light-mode .btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.html {
+    scroll-behavior: smooth;
+       }
+       .container {
+    animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
     </style>
 </head>
 <body>
@@ -60,8 +89,7 @@
     
     <div class="category">
         <h3>Hacking Books</h3>
-        <button class="btn" onclick="enterPassword()">Access (Requires Password)</button>
-        <button class="btn" onclick="redirectToDM()">Get Password</button>
+        <button class="btn" onclick="enterPassword()">Access (Requires Password)</button><button class="btn" onclick="redirectToDM()">Get Password</button>
     </div>
     
     <div class="category">
@@ -78,7 +106,10 @@
         <button class="btn" onclick="joinChannel()">Join Our Channel</button>
     </div>
 </div>
-
+<div style="margin-top: 30px;">
+    <button class="btn" onclick="location.href='Library page2.html'">Next Page</button>
+</div><br></br>
+<button class="btn" onclick="toggleMode()">Toggle Theme</button>
 <script>
     function enterPassword() {
         let password = prompt("Enter the password:");
@@ -97,9 +128,9 @@
     function joinChannel() {
         window.location.href = "https://t.me/rg_digitals";
     }
+    function toggleMode() {
+    document.body.classList.toggle("light-mode");
+}
 </script>
-<div style="margin-top: 30px;">
-    <button class="btn" onclick="location.href='Library page2.html'">Next Page</button>
-</div>
 </body>
 </html>
