@@ -5,7 +5,7 @@
     <title>Romantic Tech Library</title>
     <style>
         body {
-            background-image: url('https://i.postimg.cc/PrX2XKXf/file-GHQzd-LDkzt-Sthmax-KEo-J3-K.webp');
+            background-image: url('https://i.postimg.cc/PrX2XKXf/file-GHQzd-LDkzt-Sthmax-KEo-J3-K.webp')
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -14,11 +14,11 @@
         }
         .container {
     width: 90%;  /* Reduce width to make it look cuter */
-    max-width: 700px; /* Set a max width for better appearance */
+    max-width: 600px; /* Set a max width for better appearance */
     margin: auto;  /* Center it */
     padding: 20px;  /* Adjust padding for spacing */
     background-color: rgba(0, 0, 0, 0.8); /* Keep dark background but with a slight transparency */
-    border-radius: 50px; /* Add rounded corners for a stylish look */
+    border-radius: 20px; /* Add rounded corners for a stylish look */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add soft shadow for depth */
 }
         .profile-pic {
@@ -40,7 +40,7 @@
             padding: 10px 20px;
             border: none;
             cursor: pointer;
-            border-radius: 10px;
+            border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 162, 255, 0.8);
             transition: 0.5s;
         }
@@ -76,28 +76,6 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-        /* Inline button styling */
-.flex-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-/* Align toggle + next page */
-.bottom-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-/* Prevent scroll on first page */
-html, body {
-    height: 100vh;
-    overflow: hidden;
-}
     </style>
 </head>
 <body>
@@ -111,10 +89,7 @@ html, body {
     
     <div class="category">
         <h3>Hacking Books</h3>
-        <div class="flex-buttons">
-    <button class="btn" onclick="enterPassword()">Access (Requires Password)</button>
-    <button class="btn" onclick="redirectToDM()">Get Password</button>
-        </div>
+        <button class="btn" onclick="enterPassword()">Access (Requires Password)</button><button class="btn" onclick="redirectToDM()">Get Password</button>
     </div>
     
     <div class="category">
@@ -131,10 +106,10 @@ html, body {
         <button class="btn" onclick="joinChannel()">Join Our Channel</button>
     </div>
 </div>
-<div class="bottom-buttons">
+<div style="margin-top: 30px;">
     <button class="btn" onclick="location.href='Library page2.html'">Next Page</button>
-    <button class="btn" onclick="toggleMode()">Toggle Theme</button>
-</div>
+</div><br></br>
+<button class="btn" onclick="toggleMode()">Toggle Theme</button>
 <script>
     function enterPassword() {
         let password = prompt("Enter the password:");
@@ -158,4 +133,4 @@ html, body {
 }
 </script>
 </body>
-</html>
+    </html>
